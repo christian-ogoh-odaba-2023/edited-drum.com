@@ -111,6 +111,9 @@ if (form) {
                 input.nextElementSibling.innerText = 'This field is required.';
             } else {
                 input.style.borderColor = '';
+
+
+              
                 input.nextElementSibling.innerText = '';
             }
         });
@@ -118,3 +121,10 @@ if (form) {
         if (!isValid) e.preventDefault();
     });
 }
+
+<script> 
+  document.addeventlistener('contextmenu', event =>event.preventdefault());
+  </script>
+
+
+  
